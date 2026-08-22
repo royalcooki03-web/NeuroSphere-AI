@@ -1,8 +1,9 @@
 Flask==3.1.2
-pandas==2.3.2
-numpy==2.3.2
-scikit-learn==1.7.1
-joblib==1.5.2
-python-dotenv==1.1.1
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+joblib==1.4.2
+python-dotenv==1.0.1
 openai==1.102.0
 gunicorn==23.0.0
