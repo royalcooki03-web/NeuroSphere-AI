@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NeuroSphere AI</title><link rel="stylesheet" href="/static/style.css"></head><body>
+<canvas id="space"></canvas><div class="orb a"></div><div class="orb b"></div>
+<nav><div class="brand"><b>N</b> NEURO<span>SPHERE</span></div><div class="status">● AI CORE ONLINE</div><button onclick="chatScroll()">NeuroBot ↗</button></nav>
+<main>
+<section class="hero"><div class="eyebrow">AIML • PREDICTIVE ANALYTICS • AI ASSISTANT</div><h1>See the signal.<br><span>Predict the future.</span></h1><p>A cinematic student-success intelligence platform powered by Machine Learning, explainable signals and an AI assistant.</p><div class="actions"><button class="primary" onclick="go('predict')">Launch Prediction</button><button onclick="chatScroll()">Ask NeuroBot</button></div><div class="facts"><div><b>1,200+</b><small>records</small></div><div><b>7</b><small>ML signals</small></div><div><b>RF</b><small>classifier</small></div></div></section>
+<section class="metrics"><div><small>DATASET</small><b id="students">—</b><span>students</span></div><div><small>AVG SCORE</small><b id="score">—</b><span>performance</span></div><div><small>AVG ATTENDANCE</small><b id="attendance">—</b><span>engagement</span></div><div><small>MODEL</small><b class="green">ONLINE</b><span>Random Forest</span></div></section>
+<section id="predict" class="panel"><div class="head"><div><div class="eyebrow">01 / PREDICTIVE ENGINE</div><h2>Student Risk Scanner</h2></div><em>LIVE INFERENCE</em></div><div class="scanner"><div class="form">
+<label>Attendance <output id="o1">80</output><input id="i1" type="range" min="35" max="100" value="80"></label>
+<label>Study hours <output id="o2">5</output><input id="i2" type="range" min=".5" max="12" step=".5" value="5"></label>
+<label>Previous score <output id="o3">75</output><input id="i3" type="range" min="25" max="98" value="75"></label>
+<label>Assignments <output id="o4">80</output><input id="i4" type="range" min="25" max="100" value="80"></label>
+<label>Sleep hours <output id="o5">7</output><input id="i5" type="range" min="4" max="10" step=".5" value="7"></label>
+<label>Screen time <output id="o6">4</output><input id="i6" type="range" min="1" max="10" step=".5" value="4"></label>
+<label>Engagement <output id="o7">7</output><input id="i7" type="range" min="1" max="10" step=".5" value="7"></label>
+<button class="primary full" onclick="predict()">RUN AI SCAN</button></div>
+<div class="result"><div class="ring"><b id="conf">—</b><small>confidence</small></div><strong id="risk">READY</strong><p id="msg">Adjust the signals and run an AI scan.</p><div id="signals"></div></div></div></section>
+<section class="two"><div class="panel"><div class="eyebrow">02 / SIGNAL MAP</div><h2>Risk distribution</h2><div id="bars"></div></div><div class="panel"><div class="eyebrow">03 / ARCHITECTURE</div><h2>AI pipeline</h2><div class="pipe"><span>DATASET →</span><span>FEATURES →</span><span>RANDOM FOREST →</span><span>EXPLAINABLE RESULT</span></div></div></section>
+<section id="chat" class="panel"><div class="head"><div><div class="eyebrow">04 / CONVERSATIONAL AI</div><h2>NeuroBot</h2></div><em>AI ASSISTANT</em></div><div id="msgs" class="msgs"><div class="bot"><b>NeuroBot</b><p>Welcome. Ask me about the model, dataset, API or risk prediction.</p></div></div><div class="chatbar"><input id="chatIn" placeholder="Ask NeuroBot anything..." onkeydown="if(event.key==='Enter')send()"><button class="primary" onclick="send()">SEND</button></div></section>
+<footer>NEUROSPHERE AI • AIML INTERNSHIP PROJECT • PROFESSIONAL DEMO</footer></main><script src="/static/app.js"></script></body></html>
